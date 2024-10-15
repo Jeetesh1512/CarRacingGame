@@ -1,7 +1,9 @@
 #ifndef ENTITIES_H
 #define ENTITIES_H
 
-#include "qtypes.h"
+#include<QFloat16>
+#include <QVariant>
+// #include "qtypes.h"
 enum CarLanes {
     LANE_LEFT,
     LANE_CENTER,
