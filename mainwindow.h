@@ -1,9 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include<QDebug>
 #include <QMainWindow>
 #include <QKeyEvent>
+#include <QTimer>
 #include "entities.h"
 #include "gamescene.h"
 QT_BEGIN_NAMESPACE
@@ -24,9 +24,10 @@ public:
     ~MainWindow();
 
     MainPlayer player;
-    // QGraphicsScene base;
+    QList<Entity *> entities;
     gameScene* base;
     void drawGameScene();
+    void game_loop();
 
 
 
@@ -40,6 +41,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QTimer* timer;
+
     // bool eventFilter(QObject *object, QEvent *event);
 };
 #endif // MAINWINDOW_H
