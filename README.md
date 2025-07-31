@@ -25,5 +25,5 @@ Navigate traffic, avoid collisions, and try to survive as long as possible!
 1. Download the latest `.AppImage` 
 2. Make it executable:
    ```bash
-   chmod +x Car_Racing_Game-x86_64.AppImage
-   ./Car_Racing_Game-x86_64.AppImage
+   chmod +x Car_Racing_Game-ac25d54-x86_64.AppImage
+   ./Car_Racing_Game-ac25d54-x86_64.AppImage
